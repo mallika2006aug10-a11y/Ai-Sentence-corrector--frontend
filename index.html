@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Sentence Corrector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="logo">
+                AI
+            </div>
+
+            <div>
+                <h1>AI Sentence Corrector</h1>
+                <p>Write better. Communicate clearly.</p>
+            </div>
+
+        </header>
+
+
+        <!-- Main Card -->
+        <section class="corrector-card">
+
+            <div class="editor-area">
+
+                <!-- Input -->
+                <div class="editor-box">
+
+                    <div class="box-header">
+                        <span>Your Sentence</span>
+                        <span id="charCount">0 / 1000</span>
+                    </div>
+
+                    <textarea
+                        id="sentenceInput"
+                        maxlength="1000"
+                        placeholder="Type or paste your sentence here..."
+                    ></textarea>
+
+                    <div class="word-count">
+                        <span id="wordCount">0 words</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Output -->
+                <div class="editor-box">
+
+                    <div class="box-header">
+                        <span>Corrected Sentence</span>
+
+                        <button
+                            id="copyBtn"
+                            class="copy-btn"
+                        >
+                            Copy
+                        </button>
+                    </div>
+
+                    <div id="result" class="result">
+                        Your corrected sentence will appear here.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="actions">
+
+                <button
+                    id="checkBtn"
+                    class="correct-btn"
+                >
+                    ✨ Correct Sentence
+                </button>
+
+                <button
+                    id="clearBtn"
+                    class="clear-btn"
+                >
+                    Clear
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section class="features">
+
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+
+                <div>
+                    <strong>Grammar</strong>
+                    <small>Fix grammar mistakes</small>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+
+                <div>
+                    <strong>Spelling</strong>
+                    <small>Correct spelling & punctuation</small>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+
+                <div>
+                    <strong>Readability</strong>
+                    <small>Make sentences clearer</small>
+                </div>
+            </div>
+
+        </section>
+
+
+        <p class="note">
+            AI-assisted corrections may vary. Please review important content.
+        </p>
+
+    </main>
+
+
+    
+     <script src="script.js?v=2"></script>
+</body>
+
+</html>
